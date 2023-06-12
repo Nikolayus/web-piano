@@ -18,6 +18,7 @@ html {
 	background-color: #606060;
 	margin:5px;
 	border-radius: 5px;
+        box-shadow: 2px 2px #808080;
 
 }
 #piano {
