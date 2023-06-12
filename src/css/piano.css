@@ -7,8 +7,8 @@ html {
 }
 #piano {
 	background-color: #000000;
-	width: 992px;
-	height: 290px;
+	width: 949px;
+	height: 310px;
 	margin: 80px auto;
 	padding: 90px 20px 0 20px;
 	position: relative;
@@ -65,3 +65,13 @@ html {
 	width: 318px;
 	}
 }
+
+#piano .key span {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-weight: bold;
+  }
