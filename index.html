@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Web Piano</title>
+    <title>Piano Digital</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
 </head>
-
 <body>
     <nav class="navbar">
         <!-- Aquí puedes agregar el contenido del navbar -->
     </nav>
     
     <main>
+        <h1>Prueba</h1>
         <div class="piano">
+            <!-- Aquí puedes agregar las teclas del piano -->
+            <div class="tecla" data-note="C"></div>
+            <div class="tecla" data-note="D"></div>
+            <div class="tecla" data-note="E"></div>
+            <!-- Agrega más teclas según sea necesario -->
         </div>
     </main>
     
     <footer class="footer">
         <!-- Aquí puedes agregar el contenido del footer -->
     </footer>
-
-
-
-
-
-
-
+    
+    <audio id="audioC" src="/web-piano/notas_musicales/online-guitar-tuner-d3-MI.mp3"></audio>
+    <audio id="audioD" src="/web-piano/notas_musicales/online-guitar-tuner-e4_Re.mp3"></audio>
+    <audio id="audioE" src="/web-piano/notas_musicales/online-guitar-tuner-g3_SOL.mp3"></audio>
+    <!-- Agrega más elementos <audio> para las notas adicionales -->
+    
     <script src="./src/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+   <script src="./src/js/script.js"></script>
 </body>
 </html>
