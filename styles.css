@@ -1,0 +1,44 @@
+
+.typewriter {
+    color: rgb(148, 139, 139);
+    text-align: left;
+    top: 20px;
+    margin-left: 50px;
+    overflow: hidden;
+    /* Para ocultar el exceso de texto */
+    border-right: .15em solid rgb(162, 161, 158);
+    /* Efecto del cursor parpadeante */
+    white-space: nowrap;
+    /* Para evitar el salto de línea */
+    letter-spacing: .15em;
+    /* Espacio entre letras */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(245, 244, 241)
+    }
+}
+
+
+.imagen {
+    float: center;
+
+}
