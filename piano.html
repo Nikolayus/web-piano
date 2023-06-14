@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano</title>
+  <link rel="stylesheet" href="./src/css/piano.css">
+</head>
+
+<body>
+  <div id="piano">
+    <div class="controls-container">
+      <button id="mostrarTeclas">Mostrar Teclas</button>
+      <div id="player">
+        <div id="volume"></div>
+        <p class="deslizante">Volumen</p>
+        <input type="range" min="1" max="100" value="50">
+      </div>
+    </div>
+    
+
+    <div class="keys">
+      <div class="key" data-note="A"><span>A</span></div>
+      <div class="key black--key" data-note="A#"><span>A#</span></div>
+      <div class="key black--key" data-note="S#"><span>S#</span></div>
+      <div class="key" data-note="S"><span>S</span></div>
+      <div class="key black--key" data-note="D"><span>D</span></div>
+      <div class="key black--key" data-note="D#"><span>D#</span></div>
+      <div class="key black--key" data-note="F"><span>F</span></div>
+
+      <div class="key" data-note="F#"><span>F#</span></div>
+      <div class="key black--key" data-note="G"><span>G</span></div>
+      <div class="key black--key" data-note="G#"><span>G#</span></div>
+      <div class="key" data-note="H"><span>H</span></div>
+      <div class="key black--key" data-note="H#"><span>H#</span></div>
+      <div class="key black--key" data-note="J"><span>J</span></div>
+      <div class="key black--key" data-note="J#"><span>J#</span></div>
+
+      <div class="key" data-note="K"><span>K</span></div>
+      <div class="key black--key" data-note="K#"><span>K#</span></div>
+      <div class="key black--key" data-note="L"><span>L</span></div>
+      <div class="key" data-note="L#"><span>L#</span></div>
+      <div class="key black--key" data-note="Ñ"><span>Ñ</span></div>
+      <div class="key black--key" data-note="Ñ#"><span>Ñ#</span></div>
+    </div>
+
+  </div>
+  </div>
+  <script src="./src/js/script.js"></script>
+
+  <audio id="audioA" src="./notas_musicales/1.wav"></audio>
+  <audio id="audioA#" src="./notas_musicales/2.wav"></audio>
+  <audio id="audioS" src="./notas_musicales/3.wav"></audio>
+  <audio id="audioS#" src="./notas_musicales/4.wav"></audio>
+  <audio id="audioD" src="./notas_musicales/5.wav"></audio>
+  <audio id="audioD#" src="./notas_musicales/6.wav"></audio>
+  <audio id="audioF" src="./notas_musicales/7.wav"></audio>
+  <audio id="audioF#" src="./notas_musicales/8.wav"></audio>
+  <audio id="audioG" src="./notas_musicales/9.wav"></audio>
+  <audio id="audioG#" src="./notas_musicales/10.wav"></audio>
+  <audio id="audioJ" src="./notas_musicales/11.wav"></audio>
+  <audio id="audioJ#" src="./notas_musicales/12.wav"></audio>
+  <audio id="audioK" src="./notas_musicales/13.wav"></audio>
+  <audio id="audioK#" src="./notas_musicales/14.wav"></audio>
+  <audio id="audioL" src="./notas_musicales/15.wav"></audio>
+
+
+ <script src="./src/js/script.js"></script>
+ 
+
+</body>
+
+</html>
