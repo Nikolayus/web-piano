@@ -1,0 +1,140 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+#piano {
+	background-color: #000000;
+	width: 949px;
+	height: 310px;
+	margin: 80px auto;
+	padding: 20px 20px 0 20px;
+	position: relative;
+	border-radius: 10px;
+}
+
+.keys {
+	background-color: #000000;
+	width: 928px;
+	height: 180px;
+	padding-left: 2px;
+	overflow: hidden;
+}
+
+.key {
+	background-color: #FFFFFF;
+	position: relative;
+	width: 41px;
+	height: 175px;
+	margin: 2px;
+	float: left;
+	border-radius: 0 0 3px 3px;
+}
+
+/*Style when the white button is pressed using keyboard */
+.key.pressed.white.keyboard {
+	background: rgb(255, 102, 178);
+}
+
+/* Style when the black button is pressed using keyboard */
+.key.pressed.black.keyboard {
+	background: linear-gradient(45deg, #4c4c4c, #A0A0A0);
+}
+
+.key:hover {
+	background: rgb(255, 102, 178);
+}
+
+/* Style when the white button is pressed*/
+.white_active {
+	box-shadow: inset 3px -2px 0 #00000036;
+	background: linear-gradient(45deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .5));
+}
+
+.key.black--key::after {
+	background-color: #1d1e22;
+
+	content: "";
+	position: absolute;
+	left: -18px;
+	width: 32px;
+	height: 100px;
+	border-radius: 0 0 3px 3px;
+}
+
+.key.black--key:hover::after {
+	background: linear-gradient(45deg, #4c4c4c, #A0A0A0);
+}
+
+/* Style when the black button is pressed  */
+.black_active {
+	box-shadow: inset 3px -5px 0 #2c2c2c;
+}
+
+@media (max-width: 768px) {
+	#piano {
+		width: 358px;
+	}
+
+	.keys {
+		width: 318px;
+	}
+}
+
+#piano .key span {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+button {
+	display: inline-block;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	padding: 15px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background-color: #535d54;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px rgb(118, 117, 117);
+}
+
+button:hover {
+	background-color: #3e8e41
+}
+
+button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.controls-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .controls-container button {
+	margin-right: 10px;
+  }
+  
+.deslizante{
+	text-decoration: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
