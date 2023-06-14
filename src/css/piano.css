@@ -36,6 +36,16 @@ html {
 	border-radius: 0 0 3px 3px;
 }
 
+/*Style when the white button is pressed using keyboard */
+.key.pressed.white.keyboard {
+	background: rgb(255, 102, 178);
+}
+
+/* Style when the black button is pressed using keyboard */
+.key.pressed.black.keyboard {
+	background: linear-gradient(45deg, #4c4c4c, #A0A0A0);
+}
+
 .key:hover {
 	background: rgb(255, 102, 178);
 }
@@ -111,4 +121,20 @@ button:active {
 	background-color: #3e8e41;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
+}
+.controls-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .controls-container button {
+	margin-right: 10px;
+  }
+  
+.deslizante{
+	text-decoration: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
