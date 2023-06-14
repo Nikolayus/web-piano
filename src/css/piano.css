@@ -1,7 +1,57 @@
 html {
 	box-sizing: border-box;
 }
+/* Cambios en el CSS del menú de navegación */
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(133, 131, 131, 0.756);
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.mi-boton {
+    display: flex;
+    align-items: center;
+}
+
+.barra-menu {
+	background-color: #ff99cc;
+	text-align: center;
+	padding: 10px 0;
+  }
+  
+  .botones-menu {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+  }
+  
+  .botones-menu button {
+	background-color: #33cccc;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin: 0 5px;
+  }
+  
+  .botones-menu button:hover {
+	background-color: #00b3b3;
+	cursor: pointer;
+  }
 *,
 *::before,
 *::after {
@@ -96,7 +146,7 @@ html {
 	font-weight: bold;
 }
 
-button {
+#mostrarTeclas {
 	display: inline-block;
 	margin-bottom: 30px;
 	margin-left: 20px;
@@ -113,11 +163,11 @@ button {
 	box-shadow: 0 9px rgb(118, 117, 117);
 }
 
-button:hover {
+#mostrarTeclas:hover {
 	background-color: #3e8e41
 }
 
-button:active {
+#mostrarTeclas:active {
 	background-color: #3e8e41;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
