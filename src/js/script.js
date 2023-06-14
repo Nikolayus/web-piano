@@ -91,13 +91,13 @@ botonMostrarTeclas.addEventListener("click", function () {
 const volumeSlider = document.querySelector('#player input[type="range"]');
 
 // Agrega un evento de cambio al control deslizante del volumen
-volumeSlider.addEventListener('input', () => {
+volumeSlider.addEventListener("input", () => {
   // Obtiene el valor del control deslizante del volumen
   const volumeValue = volumeSlider.value;
 
   // Establece el volumen para cada audio en base al valor del control deslizante
-  const audios = document.querySelectorAll('audio');
-  audios.forEach(audio => {
+  const audios = document.querySelectorAll("audio");
+  audios.forEach((audio) => {
     audio.volume = volumeValue / 100;
   });
 });
